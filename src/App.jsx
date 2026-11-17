@@ -1,17 +1,19 @@
 import { useState } from "react";
-import firstComponent from "./component/firstComponent";
+import  FirstComponent  from "./component/firstComponent";
+
 function App() {
 
-  const [x, setx] = useState(0);
+  const [X, setx] = useState(0);
   const btnClick = () => {
-    setx(x+1);
-    console.log(x);
+    setx(X+1);
+    
     console.log("clicked");
   }
   return (
     <div>
-      <firstComponent data ={x}/>
+      <FirstComponent data={X}/>
       <button onClick={() => {btnClick()}}>Click Me</button>
+      
     </div>
   )
 }
