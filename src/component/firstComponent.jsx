@@ -1,8 +1,9 @@
-const FirstComponent = (props) => {
+function firstComponent(props) {
   return (
     <div>
-        {props.data}
+    {props.data}
     </div>
   )
 }
-export default FirstComponent
+
+export default firstComponent
